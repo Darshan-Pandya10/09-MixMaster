@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import { useLoaderData , Link } from 'react-router-dom'
+import { useLoaderData , Link, Navigate } from 'react-router-dom'
 
 const singleCocktailURL = 'https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i='
 
@@ -11,7 +11,11 @@ export const loader = async({params}) => {
 }
 
 function Cocktail() {
+
   const {id , data} = useLoaderData();
+
+    if(!data) return <Navigate to='/' />
+  
   const singleCocktail = data?.drinks[0];
   const {
     strDrink : name , 
