@@ -13,3 +13,23 @@
         @apply p-8 
     }
 }
+
+@layer components {
+    .paragraph {
+        @apply my-4 text-base font-semibold tracking-wider leading-7
+    }
+}
+
+@layer components {
+    .span {
+        @apply p-1 px-2 text-base font-semibold tracking-wider bg-green-400 mr-2
+    }
+}
+
+@layer components {
+    .inputs {
+        @apply w-[70vw] md:w-[20rem] font-medium text-base px-2 border-2 border-solid border-slate-300
+    }
+}
+
+

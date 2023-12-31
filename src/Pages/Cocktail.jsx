@@ -37,15 +37,15 @@ function Cocktail() {
       </div>
       <div className='m-4 ml-8'>
         <h3 className='text-2xl font-bold tracking-wider md:text-3xl leading-7'>{name}</h3>
-        <p className='my-4 text-base font-semibold tracking-wider leading-7'><span className='p-1 text-base font-semibold tracking-wider bg-green-400 mr-2'>Alocoholic : </span> {info}</p>
-         <p className='my-4 text-base font-semibold tracking-wider leading-7'><span className='p-1 text-base font-semibold tracking-wider bg-green-400 mr-2'>  Category : </span> {category}</p>
-         <p className='my-4 text-base font-semibold tracking-wider leading-7'><span className='p-1 text-base font-semibold tracking-wider bg-green-400 mr-2'>  Glass : </span> {glass}</p>
-         <p className='my-4 text-base font-semibold tracking-wider leading-7'><span className='p-1 text-base font-semibold tracking-wider bg-green-400 mr-2'>  Ingredients : </span> {
+        <p className='paragraph'><span className='span'>Alocoholic : </span> {info}</p>
+         <p className='paragraph'><span className='span'>  Category : </span> {category}</p>
+         <p className='paragraph'><span className='span'>  Glass : </span> {glass}</p>
+         <p className='paragraph'><span className='span'>  Ingredients : </span> {
           validIngredients.map((item , index) => {
             return <span key={index} className=''>{item}{index < validIngredients.length - 1 ? ',' : ''}</span>
           })
          } </p> 
-         <p className='my-4 text-base font-semibold tracking-wider leading-7'><span className='p-1 text-base font-semibold tracking-wider bg-green-400 mr-2'>  Instructions : </span> {instructions}</p> 
+         <p className='paragraph'><span className='span'>  Instructions : </span> {instructions}</p> 
       </div>
   </div>
     </div>
